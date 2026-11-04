@@ -67,12 +67,24 @@ function Navigation() {
 function SocialLinks({ compact = false }) {
   return (
     <div className={`social-links${compact ? ' social-links-compact' : ''}`} aria-label="Social profiles">
-      <span className="social-unavailable" title="GitHub profile URL has not been provided">
+
+      {/* <span className="social-unavailable" title="GitHub profile URL has not been provided">
         <Github size={18} aria-hidden="true" />
         <span>GitHub URL not provided</span>
-      </span>
+      </span> */}
+
+    <a
+        href="https://github.com/palakshukla23"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Visit Palak Shukla on Github (opens in a new tab)"
+      >
+        <Github size={18} aria-hidden="true" />
+        <span>Github</span>
+      </a>
+
       <a
-        href="https://www.linkedin.com/in/palak-shukla-ab4155401/"
+        href="https://www.linkedin.com/in/palakkshukla/"
         target="_blank"
         rel="noreferrer"
         aria-label="Visit Palak Shukla on LinkedIn (opens in a new tab)"
@@ -80,10 +92,13 @@ function SocialLinks({ compact = false }) {
         <Linkedin size={18} aria-hidden="true" />
         <span>LinkedIn</span>
       </a>
-      <a href="mailto:Palakshukla9876@gmail.com" aria-label="Email Palak Shukla">
+
+
+      <a href="mailto:palakshukla9876@gmail.com" aria-label="Email Palak Shukla">
         <Mail size={18} aria-hidden="true" />
         <span>Email</span>
       </a>
+
     </div>
   );
 }
@@ -391,10 +406,7 @@ function Contact() {
             <Mail size={19} aria-hidden="true" />
             <span><small>Email</small>Palakshukla9876@gmail.com <ArrowUpRight size={13} aria-hidden="true" /></span>
           </a>
-          <a className="contact-method" href="tel:+917760263883">
-            <Phone size={19} aria-hidden="true" />
-            <span><small>Phone</small>+91 77602 63883 <ArrowUpRight size={13} aria-hidden="true" /></span>
-          </a>
+          
         </div>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
