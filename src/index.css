@@ -109,6 +109,11 @@ textarea:focus-visible {
   font-weight: 600;
   letter-spacing: -0.02em;
 }
+.logo{
+  width: 31px;
+  height: 31px;
+  
+}
 
 .wordmark-mark {
   display: grid;

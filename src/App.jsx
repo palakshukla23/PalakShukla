@@ -36,7 +36,8 @@ function Navigation() {
     <header className="site-header">
       <nav className="navigation page-width" aria-label="Main navigation">
         <a className="wordmark" href="#home" onClick={closeMenu} aria-label="Palak Shukla home">
-          <span className="wordmark-mark" aria-hidden="true">P</span>
+          {/* <span className="wordmark-mark" aria-hidden="true">P</span> */}
+          <img className="logo" src="/dist/logo.jpg" alt="Palak Shukla logo"/>
           <span>Palak Shukla</span>
         </a>
 
@@ -68,10 +69,6 @@ function SocialLinks({ compact = false }) {
   return (
     <div className={`social-links${compact ? ' social-links-compact' : ''}`} aria-label="Social profiles">
 
-      {/* <span className="social-unavailable" title="GitHub profile URL has not been provided">
-        <Github size={18} aria-hidden="true" />
-        <span>GitHub URL not provided</span>
-      </span> */}
 
     <a
         href="https://github.com/palakshukla23"
@@ -137,7 +134,8 @@ function Hero() {
         <div className="avatar-orbit avatar-orbit-outer" aria-hidden="true" />
         <div className="avatar-orbit avatar-orbit-inner" aria-hidden="true" />
         <div className="avatar-card">
-          <span className="avatar-initials" aria-hidden="true">PS</span>
+          {/* <span className="avatar-initials" aria-hidden="true">PS</span> */}
+          <img src="/dist/logo.jpg" alt="Palak Shukla logo" className="logo" />
           <span className="avatar-name">Palak Shukla</span>
           <span className="avatar-caption">Curious by nature. Builder by choice.</span>
         </div>
@@ -394,14 +392,17 @@ function Contact() {
           id="contact-title"
         />
         <div className="contact-methods">
-          <span className="contact-method contact-unavailable">
-            <Github size={19} aria-hidden="true" />
-            <span><small>GitHub</small>Profile URL not provided</span>
-          </span>
+
           <a className="contact-method" href="https://www.linkedin.com/in/palak-shukla-ab4155401/" target="_blank" rel="noreferrer">
-            <Linkedin size={19} aria-hidden="true" />
-            <span><small>LinkedIn</small>Connect with me <ArrowUpRight size={13} aria-hidden="true" /></span>
+            <Github size={19} aria-hidden="true" />
+            <span><small>Github</small>github/palakshukla23<ArrowUpRight size={13} aria-hidden="true" /></span>
           </a>
+
+          <a className="contact-method" href="https://www.linkedin.com/in/palakkshukla" target="_blank" rel="noreferrer">
+            <Linkedin size={19} aria-hidden="true" />
+            <span><small>LinkedIn</small>palakkshukla<ArrowUpRight size={13} aria-hidden="true" /></span>
+          </a>
+
           <a className="contact-method" href="mailto:Palakshukla9876@gmail.com">
             <Mail size={19} aria-hidden="true" />
             <span><small>Email</small>Palakshukla9876@gmail.com <ArrowUpRight size={13} aria-hidden="true" /></span>
